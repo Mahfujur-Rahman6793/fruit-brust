@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="lofi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -149,20 +149,259 @@
           </div>
         </div>
       </div>
+      <!-- deal of the day -->
+      <div class="flex flex-col justify-center px-4 mt-8 md:justify-between md:flex-row md:mt-72">
+        <div>
+          <h3 class="font-bold text-5xl text-white mb-6">Deal of the day</h3>
+          <p class="text-gray-700 mb-8 md:mr-4  lg:max-w-[615px]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <div>
+          <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:15;"></span>
+              </span>
+              days
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:10;"></span>
+              </span>
+              hours
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:24;"></span>
+              </span>
+              min
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:52;"></span>
+              </span>
+              sec
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- card-1 -->
+        <div class="card w-96 bg-slate-50 pt-12 pb-12 shadow-xl">
+          <figure><img src="./images/fruit6.png" alt="Shoes" /></figure>
+          <div class="card-body flex flex-col items-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+            <hr>
+            <p>Apples</p>
+            <!-- rating -->
+            <div class="rating">
+              <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+              <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" checked />
+              <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+              <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+              <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+            </div>
+            <!-- modal -->
+            <div class="card-actions justify-end">
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="text-[#F85559]" onclick="my_modal_1.showModal()">Details</button>
+                <dialog id="my_modal_1" class="modal">
+                  <form method="dialog" class="modal-box">
+                    
+                    <figure><img src="./images/fruit6.png" alt="Shoes" /></figure>
+                    <h3 class="font-bold text-5xl text-center">Apples</h3>
+                    <p class="py-4 px-8 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div card w-96 bg-slate-50 pt-12 pb-12 shadow-xl>
+
+                      <div class="card-body flex flex-col items-center">
+                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <hr>
+                        <p>Apples</p>
+                        <!-- rating -->
+                        <div class="rating">
+                          <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+                          <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" checked />
+                          <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+                          <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+                          <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+                        </div>
+                                <div class="modal-action">
+                                  <!-- if there is a button in form, it will close the modal -->
+                                  <button class="btn">Close</button>
+                                  <button class="btn bg-red-900">Buy Now</button>
+                                </div>
+                              </form>
+                            </dialog>
+            </div>
+          </div>
+        </div>
+        <!-- card-2 -->
+        <div class="card w-96 bg-slate-50 pt-12 pb-12 shadow-xl">
+          <figure><img src="./images/fruit2.png" alt="Shoes" /></figure>
+          <div class="card-body flex flex-col items-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+            <hr>
+            <p>Apples</p>
+            <!-- rating -->
+            <div class="rating">
+              <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+              <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" checked />
+              <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+              <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+              <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+            </div>
+            <!-- modal -->
+            <div class="card-actions justify-end">
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="text-[#F85559]" onclick="my_modal_2.showModal()">Details</button>
+                <dialog id="my_modal_2" class="modal">
+                  <form method="dialog" class="modal-box">
+                    
+                    <figure><img src="./images/fruit2.png" alt="Shoes" /></figure>
+                    <h3 class="font-bold text-5xl text-center">Orange</h3>
+                    <p class="py-4 px-8 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div card w-96 bg-slate-50 pt-12 pb-12 shadow-xl>
+
+                      <div class="card-body flex flex-col items-center">
+                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <hr>
+                        <p>Apples</p>
+                        <!-- rating -->
+                        <div class="rating">
+                          <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+                          <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" checked />
+                          <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+                          <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+                          <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+                        </div>
+                                <div class="modal-action">
+                                  <!-- if there is a button in form, it will close the modal -->
+                                  <button class="btn">Close</button>
+                                  <button class="btn bg-red-900">Buy Now</button>
+                                </div>
+                              </form>
+                            </dialog>
+            </div>
+          </div>
+        </div>
+        <!-- card-3 -->
+        <div class="card w-96 bg-slate-50 pt-12 pb-12 shadow-xl">
+          <figure><img src="./images/fruit4.png" alt="Shoes" /></figure>
+          <div class="card-body flex flex-col items-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+            <hr>
+            <p>Apples</p>
+            <!-- rating -->
+            <div class="rating">
+              <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+              <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" checked />
+              <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+              <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+              <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+            </div>
+            <!-- modal -->
+            <div class="card-actions justify-end">
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="text-[#F85559]" onclick="my_modal_3.showModal()">Details</button>
+                <dialog id="my_modal_3" class="modal">
+                  <form method="dialog" class="modal-box">
+                    
+                    <figure><img src="./images/fruit4.png" alt="Shoes" /></figure>
+                    <h3 class="font-bold text-5xl text-center">Strawberry</h3>
+                    <p class="py-4 px-8 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div card w-96 bg-slate-50 pt-12 pb-12 shadow-xl>
+
+                      <div class="card-body flex flex-col items-center">
+                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <hr>
+                        <p>Apples</p>
+                        <!-- rating -->
+                        <div class="rating">
+                          <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+                          <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" checked />
+                          <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+                          <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+                          <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+                        </div>
+                                <div class="modal-action">
+                                  <!-- if there is a button in form, it will close the modal -->
+                                  <button class="btn">Close</button>
+                                  <button class="btn bg-red-900">Buy Now</button>
+                                </div>
+                              </form>
+                            </dialog>
+            </div>
+          </div>
+        </div>
+        <!-- card-4 -->
+        <div class="card w-96 bg-slate-50 pt-12 pb-12 shadow-xl">
+          <figure><img src="./images/fruit9.png" alt="Shoes" /></figure>
+          <div class="card-body flex flex-col items-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+            <hr>
+            <p>Apples</p>
+            <!-- rating -->
+            <div class="rating">
+              <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+              <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" checked />
+              <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+              <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+              <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+            </div>
+            <!-- modal -->
+            <div class="card-actions justify-end">
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="text-[#F85559]" onclick="my_modal_4.showModal()">Details</button>
+                <dialog id="my_modal_4" class="modal">
+                  <form method="dialog" class="modal-box">
+                    
+                    <figure><img src="./images/fruit9.png" alt="Shoes" /></figure>
+                    <h3 class="font-bold text-5xl text-center">Banana</h3>
+                    <p class="py-4 px-8 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div card w-96 bg-slate-50 pt-12 pb-12 shadow-xl>
+
+                      <div class="card-body flex flex-col items-center">
+                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <hr>
+                        <p>Apples</p>
+                        <!-- rating -->
+                        <div class="rating">
+                          <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+                          <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" checked />
+                          <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+                          <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+                          <input type="checkbox" name="rating-4" class="mask mask-star-2 bg-amber-700" />
+                        </div>
+                                <div class="modal-action">
+                                  <!-- if there is a button in form, it will close the modal -->
+                                  <button class="btn">Close</button>
+                                  <button class="btn bg-red-900">Buy Now</button>
+                                </div>
+                              </form>
+                            </dialog>
+            </div>
+
+          </div>
+          
+          </div>
+        </div>
+        
+    
+      </div>
       <!-- team section -->
       <div class="flex flex-col mt-48 hero" style="background-image: url(./images/banner1.png);">
         <div class="hero-overlay bg-opacity-60"></div>
         <!-- <div class="hero-content text-center text-neutral-content">
           
         </div> -->
-        <div class="flex flex-col py-10 text-center ">
+        <div class="flex flex-col py-10 text-center text-white">
           <h3 class="text-5xl mb-5 font-bold pt-28">Meet the team section</h3>
           <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
              Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
-        <div class="flex flex-col lg:flex-row justify-evenly items-center w-full">
+        <div class="flex flex-col lg:flex-row justify-evenly items-center w-full text-white">
           <div class="mb-5">
-            <img src="./images/member1.png" alt="">
+            <img src="./images/member.png" alt="">
             <h5 class="text-center mt-3 font-bold text-2xl">Awlad Hossain</h5>
             <p class="text-center mt-3">Fruits Expert</p>
             <div  class="flex justify-around mt-3">
